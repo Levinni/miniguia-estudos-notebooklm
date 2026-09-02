@@ -429,36 +429,35 @@ UDP O User Datagram Protocol (UDP) é um protocolo de transporte extremamente mi
 
 # 📖 7. Glossário
 
-IP
-Protocolo da camada de rede que provê um serviço de entrega de datagramas não confiável, sem conexão (best-effort) e sem garantias de entrega de ponta a ponta. É responsável pelas funções essenciais de endereçamento, roteamento através de sistemas intermediários (roteadores/gateways) e fragmentação/remontagem de datagramas.
-IPv4
-Versão de IP que utiliza identificadores de interface com endereçamento lógico de 32 bits, geralmente representado em formato decimal separado por pontos (ex: 127.0.0.1). Ele fornece um serviço de transporte de datagramas não confiável e sem conexão.
-IPv6
-Versão sucessora do IPv4 que utiliza endereços de 128 bits, representados como conjuntos hexadecimais separados por dois-pontos (ex: fe80::1). Foi projetada para permitir autoconfiguração de endereços, processamento de cabeçalho simplificado para hardware e integração nativa de segurança.
-TCP
-Protocolo de transporte orientado a conexões que provê entrega de dados virtual, bidirecional (full-duplex), em sequência estrita e livre de erros (confiável) para as aplicações. Suas sessões armazenam estados de controle em uma estrutura do host chamada Bloco de controle de Transmissão (TCB).
-UDP
-Protocolo de transporte minimalista, sem conexão (connectionless) e não confiável que oferece apenas multiplexação de portas e verificação básica de integridade por meio de checksum, repassando o datagrama IP quase diretamente à aplicação.
-DNS
-Banco de dados distribuído e hierárquico operado sob o modelo cliente-servidor que realiza o mapeamento entre nomes de domínio amigáveis (legíveis por humanos, como FQDNs) e endereços IP numéricos interpretáveis pelas máquinas.
-DHCP
-Protocolo da camada de aplicação que automatiza a configuração de rede de novos hosts ao atribuir temporariamente (via concessão/lease) endereços IP disponíveis em um pool local e fornecer parâmetros cruciais como máscara de sub-rede, IP do gateway padrão e resolvedores DNS.
-Gateway
-Computador de comutação de pacotes responsável por interconectar redes físicas. No modelo de comunicação da Internet, gateways (ou roteadores IP) operam de forma livre de estado (stateless), tratando cada datagrama IP independentemente para otimizar a tolerância a falhas na rede.
-Roteador
-Dispositivo de retransmissão intermediário que opera na camada de rede para viabilizar a entrega de pacotes entre sistemas finais de diferentes sub-redes. Toma decisões de encaminhamento (forwarding) para cada pacote consultando tabelas de roteamento locais.
-Switch
-Dispositivo de retransmissão que opera na camada de enlace de dados (datalink). Ele inspeciona o cabeçalho de quadros Ethernet físicos e os encaminha seletivamente para portas específicas baseado em uma tabela dinâmica de endereçamento MAC.
-MAC Address
-Endereço físico e exclusivo de hardware de 48 bits (ou 64 bits em tecnologias recentes) atribuído na fábrica a uma interface ou adaptador de rede para viabilizar a entrega de quadros de dados na camada de enlace local.
-Porta
-Identificador numérico de 16 bits usado em nível de transporte (TCP/UDP) para demultiplexar conexões concorrentes e rotear dados recebidos até a aplicação ou processo correto no host de destino.
-Protocolo
-Conjunto de regras semânticas e sintáticas preestabelecidas que definem o formato exato das mensagens trocadas, como a informação é codificada em bits e a ordenação do fluxo de dados para que os dispositivos em rede se compreendam.
-Sub-rede
-Divisão lógica ou agrupamento de hosts de acordo com sua localização física para melhorar a escalabilidade do roteamento global. O endereço IP é dividido em uma máscara lógica com identificador de sub-rede (bits superiores) e identificador de host (bits inferiores).
-Firewall
-Dispositivo de hardware ou software (que pode rodar localmente no host) encarregado de aplicar a política de segurança de uma rede através da análise dos campos de cabeçalho (IP/transporte) e de payload dos pacotes para aceitá-los ou descartá-los.
+IP - Protocolo da camada de rede que provê um serviço de entrega de datagramas não confiável, sem conexão (best-effort) e sem garantias de entrega de ponta a ponta. É responsável pelas funções essenciais de endereçamento, roteamento através de sistemas intermediários (roteadores/gateways) e fragmentação/remontagem de datagramas.
+
+IPv4 - Versão de IP que utiliza identificadores de interface com endereçamento lógico de 32 bits, geralmente representado em formato decimal separado por pontos (ex: 127.0.0.1). Ele fornece um serviço de transporte de datagramas não confiável e sem conexão.
+
+IPv6 - Versão sucessora do IPv4 que utiliza endereços de 128 bits, representados como conjuntos hexadecimais separados por dois-pontos (ex: fe80::1). Foi projetada para permitir autoconfiguração de endereços, processamento de cabeçalho simplificado para hardware e integração nativa de segurança.
+
+TCP - Protocolo de transporte orientado a conexões que provê entrega de dados virtual, bidirecional (full-duplex), em sequência estrita e livre de erros (confiável) para as aplicações. Suas sessões armazenam estados de controle em uma estrutura do host chamada Bloco de controle de Transmissão (TCB).
+
+UDP - Protocolo de transporte minimalista, sem conexão (connectionless) e não confiável que oferece apenas multiplexação de portas e verificação básica de integridade por meio de checksum, repassando o datagrama IP quase diretamente à aplicação.
+
+DNS - Banco de dados distribuído e hierárquico operado sob o modelo cliente-servidor que realiza o mapeamento entre nomes de domínio amigáveis (legíveis por humanos, como FQDNs) e endereços IP numéricos interpretáveis pelas máquinas.
+
+DHCP - Protocolo da camada de aplicação que automatiza a configuração de rede de novos hosts ao atribuir temporariamente (via concessão/lease) endereços IP disponíveis em um pool local e fornecer parâmetros cruciais como máscara de sub-rede, IP do gateway padrão e resolvedores DNS.
+
+Gateway - Computador de comutação de pacotes responsável por interconectar redes físicas. No modelo de comunicação da Internet, gateways (ou roteadores IP) operam de forma livre de estado (stateless), tratando cada datagrama IP independentemente para otimizar a tolerância a falhas na rede.
+
+Roteador - Dispositivo de retransmissão intermediário que opera na camada de rede para viabilizar a entrega de pacotes entre sistemas finais de diferentes sub-redes. Toma decisões de encaminhamento (forwarding) para cada pacote consultando tabelas de roteamento locais.
+
+Switch - Dispositivo de retransmissão que opera na camada de enlace de dados (datalink). Ele inspeciona o cabeçalho de quadros Ethernet físicos e os encaminha seletivamente para portas específicas baseado em uma tabela dinâmica de endereçamento MAC.
+
+MAC Address - Endereço físico e exclusivo de hardware de 48 bits (ou 64 bits em tecnologias recentes) atribuído na fábrica a uma interface ou adaptador de rede para viabilizar a entrega de quadros de dados na camada de enlace local.
+
+Porta - Identificador numérico de 16 bits usado em nível de transporte (TCP/UDP) para demultiplexar conexões concorrentes e rotear dados recebidos até a aplicação ou processo correto no host de destino.
+
+Protocolo - Conjunto de regras semânticas e sintáticas preestabelecidas que definem o formato exato das mensagens trocadas, como a informação é codificada em bits e a ordenação do fluxo de dados para que os dispositivos em rede se compreendam.
+
+Sub-rede - Divisão lógica ou agrupamento de hosts de acordo com sua localização física para melhorar a escalabilidade do roteamento global. O endereço IP é dividido em uma máscara lógica com identificador de sub-rede (bits superiores) e identificador de host (bits inferiores).
+
+Firewall - Dispositivo de hardware ou software (que pode rodar localmente no host) encarregado de aplicar a política de segurança de uma rede através da análise dos campos de cabeçalho (IP/transporte) e de payload dos pacotes para aceitá-los ou descartá-los.
 
 ---
 
